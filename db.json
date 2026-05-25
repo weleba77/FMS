@@ -1,0 +1,479 @@
+{
+  "users": [
+    {
+      "id": "u-1",
+      "username": "admin",
+      "fullName": "System Administrator",
+      "role": "Admin",
+      "department": "All",
+      "active": true,
+      "createdAt": "2026-05-25T12:10:58.925Z"
+    },
+    {
+      "id": "u-2",
+      "username": "tdpsup",
+      "fullName": "Elias TDP Supervisor",
+      "role": "TDP_Supervisor",
+      "department": "TDP",
+      "active": true,
+      "createdAt": "2026-05-25T12:10:58.925Z"
+    },
+    {
+      "id": "u-3",
+      "username": "visasup",
+      "fullName": "Hana Visa Supervisor",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "active": true,
+      "createdAt": "2026-05-25T12:10:58.926Z"
+    },
+    {
+      "id": "u-4",
+      "username": "tdpenc",
+      "fullName": "Daniel TDP Encoder",
+      "role": "Encoder",
+      "department": "TDP",
+      "active": true,
+      "createdAt": "2026-05-25T12:10:58.926Z"
+    },
+    {
+      "id": "u-5",
+      "username": "visaenc",
+      "fullName": "Yared Visa Encoder",
+      "role": "Encoder",
+      "department": "Visa",
+      "active": true,
+      "createdAt": "2026-05-25T12:10:58.926Z"
+    }
+  ],
+  "userPasswords": {
+    "u-1": "admin123",
+    "u-2": "tdp123",
+    "u-3": "visa123",
+    "u-4": "tdpenc123",
+    "u-5": "visaenc123"
+  },
+  "boxes": [
+    {
+      "id": "b-tdp-1",
+      "boxNumber": "TDP-BOX-001",
+      "department": "TDP",
+      "status": "active",
+      "folderCount": 2,
+      "fileCount": 4,
+      "totalSize": 220000,
+      "createdAt": "2026-05-25T12:10:58.926Z"
+    },
+    {
+      "id": "b-visa-1",
+      "boxNumber": "VISA-BOX-001",
+      "department": "Visa",
+      "status": "active",
+      "folderCount": 3,
+      "fileCount": 2,
+      "totalSize": 110000,
+      "createdAt": "2026-05-25T12:10:58.926Z"
+    }
+  ],
+  "folders": [
+    {
+      "id": "f-tdp-1",
+      "clientName": "Abebe Bikila",
+      "passportNumber": "EP1234567",
+      "fileNumber": "FN-TDP-2026-001",
+      "department": "TDP",
+      "boxNumber": "TDP-BOX-001",
+      "boxId": "b-tdp-1",
+      "createdAt": "2026-05-25T12:10:58.926Z",
+      "status": "active"
+    },
+    {
+      "id": "f-tdp-2",
+      "clientName": "Derartu Tulu",
+      "passportNumber": "EP7654321",
+      "fileNumber": "FN-TDP-2026-002",
+      "department": "TDP",
+      "boxNumber": "TDP-BOX-001",
+      "boxId": "b-tdp-1",
+      "createdAt": "2026-05-25T12:10:58.926Z",
+      "status": "active"
+    },
+    {
+      "id": "f-visa-1",
+      "clientName": "Lelisa Desisa",
+      "passportNumber": "EP1122334",
+      "fileNumber": "FN-VISA-2026-001",
+      "department": "Visa",
+      "boxNumber": "VISA-BOX-001",
+      "boxId": "b-visa-1",
+      "createdAt": "2026-05-25T12:10:58.926Z",
+      "status": "active"
+    },
+    {
+      "id": "f-visa-2",
+      "clientName": "Tirunesh Dibaba",
+      "passportNumber": "EP4433221",
+      "fileNumber": "FN-VISA-2026-002",
+      "department": "Visa",
+      "boxNumber": "VISA-BOX-001",
+      "boxId": "b-visa-1",
+      "createdAt": "2026-05-25T12:10:58.926Z",
+      "status": "active"
+    },
+    {
+      "id": "f-visa-5c7eowptc",
+      "clientName": "fatuma",
+      "passportNumber": "ep124032",
+      "fileNumber": "FN-VISA_003",
+      "department": "Visa",
+      "boxNumber": "VISA-BOX-001",
+      "boxId": "b-visa-1",
+      "createdAt": "2026-05-25T12:12:09.862Z",
+      "status": "active"
+    }
+  ],
+  "files": [
+    {
+      "id": "fi-1",
+      "folderId": "f-tdp-1",
+      "folderName": "Abebe Bikila",
+      "boxNumber": "TDP-BOX-001",
+      "clientName": "Abebe Bikila",
+      "department": "TDP",
+      "fileName": "Passport_Abebe_Bikila.pdf",
+      "fileType": "passport",
+      "mimeType": "application/pdf",
+      "fileSize": 45000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Daniel TDP Encoder",
+      "uploadedAt": "2026-05-25T08:10:58.926Z",
+      "status": "Approved",
+      "reviewedBy": "Elias TDP Supervisor",
+      "reviewedAt": "2026-05-25T09:10:58.926Z",
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Passport_Abebe_Bikila.pdf",
+          "fileSize": 45000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Daniel TDP Encoder",
+          "uploadedAt": "2026-05-25T08:10:58.926Z"
+        }
+      ]
+    },
+    {
+      "id": "fi-2",
+      "folderId": "f-tdp-1",
+      "folderName": "Abebe Bikila",
+      "boxNumber": "TDP-BOX-001",
+      "clientName": "Abebe Bikila",
+      "department": "TDP",
+      "fileName": "Visa_Application_Form.pdf",
+      "fileType": "visa",
+      "mimeType": "application/pdf",
+      "fileSize": 55000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Daniel TDP Encoder",
+      "uploadedAt": "2026-05-25T10:10:58.926Z",
+      "status": "Pending Approval",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Visa_Application_Form.pdf",
+          "fileSize": 55000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Daniel TDP Encoder",
+          "uploadedAt": "2026-05-25T10:10:58.926Z"
+        }
+      ]
+    },
+    {
+      "id": "fi-3",
+      "folderId": "f-tdp-2",
+      "folderName": "Derartu Tulu",
+      "boxNumber": "TDP-BOX-001",
+      "clientName": "Derartu Tulu",
+      "department": "TDP",
+      "fileName": "Flight_Booking_Derartu.pdf",
+      "fileType": "ticket",
+      "mimeType": "application/pdf",
+      "fileSize": 60000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Daniel TDP Encoder",
+      "uploadedAt": "2026-05-25T07:10:58.926Z",
+      "status": "Approved",
+      "reviewedBy": "Elias TDP Supervisor",
+      "reviewedAt": "2026-05-25T07:40:58.926Z",
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Flight_Booking_Derartu.pdf",
+          "fileSize": 60000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Daniel TDP Encoder",
+          "uploadedAt": "2026-05-25T07:10:58.926Z"
+        }
+      ]
+    },
+    {
+      "id": "fi-4",
+      "folderId": "f-tdp-2",
+      "folderName": "Derartu Tulu",
+      "boxNumber": "TDP-BOX-001",
+      "clientName": "Derartu Tulu",
+      "department": "TDP",
+      "fileName": "Service_Contract_Derartu.pdf",
+      "fileType": "contract",
+      "mimeType": "application/pdf",
+      "fileSize": 60000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Daniel TDP Encoder",
+      "uploadedAt": "2026-05-25T11:10:58.926Z",
+      "status": "Pending Approval",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Service_Contract_Derartu.pdf",
+          "fileSize": 60000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Daniel TDP Encoder",
+          "uploadedAt": "2026-05-25T11:10:58.926Z"
+        }
+      ]
+    },
+    {
+      "id": "fi-5",
+      "folderId": "f-visa-1",
+      "folderName": "Lelisa Desisa",
+      "boxNumber": "VISA-BOX-001",
+      "clientName": "Lelisa Desisa",
+      "department": "Visa",
+      "fileName": "Lelisa_Passport.pdf",
+      "fileType": "passport",
+      "mimeType": "application/pdf",
+      "fileSize": 50000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Yared Visa Encoder",
+      "uploadedAt": "2026-05-25T05:10:58.926Z",
+      "status": "Approved",
+      "reviewedBy": "Hana Visa Supervisor",
+      "reviewedAt": "2026-05-25T12:15:27.689Z",
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Lelisa_Passport.pdf",
+          "fileSize": 50000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Yared Visa Encoder",
+          "uploadedAt": "2026-05-25T05:10:58.926Z"
+        }
+      ]
+    },
+    {
+      "id": "fi-6",
+      "folderId": "f-visa-1",
+      "folderName": "Lelisa Desisa",
+      "boxNumber": "VISA-BOX-001",
+      "clientName": "Lelisa Desisa",
+      "department": "Visa",
+      "fileName": "Visa_Doc_Lelisa.pdf",
+      "fileType": "visa",
+      "mimeType": "application/pdf",
+      "fileSize": 60000,
+      "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+      "uploadedBy": "Yared Visa Encoder",
+      "uploadedAt": "2026-05-25T09:10:58.926Z",
+      "status": "Approved",
+      "reviewedBy": "Hana Visa Supervisor",
+      "reviewedAt": "2026-05-25T12:15:28.766Z",
+      "version": 1,
+      "versionHistory": [
+        {
+          "version": 1,
+          "fileName": "Visa_Doc_Lelisa.pdf",
+          "fileSize": 60000,
+          "content": "JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDYKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDYKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgIDAgNTk1IDg0Ml0KL1Jlc291cmNlcyA8PAovRm9udCA8PAovRjEgNCAwIFIKPj4KPj4KL0NvbnRlbnRzIDUgMCBSCj4+CmVuZG9iago0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYQo+PgplbmRvYmoKNSAwIG9iago8PAovTGVuZ3RoIDU4Cj4+CnN0cmVhbQpCVAovRjEgMTIgVGYKMTAwIDcwMCBUZCAoVENTIEV0aGlvcGlhIEZNUyAtIERvY3VtZW50IFByZXZpZXcpIFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDE4IDAwMDAwIG4gCjAwMDAwMDAwNzAgMDAwMDAgbiAKMDAwMDAwMDEzNCAwMDAwMCBuIAowMDAwMDAwMjg2IDAwMDAwIG4gCjAwMDAwMDAzNTYgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgowCiUlRU9G",
+          "uploadedBy": "Yared Visa Encoder",
+          "uploadedAt": "2026-05-25T09:10:58.926Z"
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "id": "log-nf72tnf12",
+      "userId": "u-1",
+      "username": "admin",
+      "role": "Admin",
+      "department": "All",
+      "action": "USER_LOGIN",
+      "details": "Logged into the system successfully.",
+      "timestamp": "2026-05-25T12:23:11.674Z"
+    },
+    {
+      "id": "log-f80b5t2z3",
+      "userId": "u-1",
+      "username": "admin",
+      "role": "Admin",
+      "department": "All",
+      "action": "USER_LOGIN",
+      "details": "Logged into the system successfully.",
+      "timestamp": "2026-05-25T12:23:01.089Z"
+    },
+    {
+      "id": "log-14u7z2ftl",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Visa_Doc_Lelisa.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:28.766Z"
+    },
+    {
+      "id": "log-yhax9720s",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:27.689Z"
+    },
+    {
+      "id": "log-makvdr78t",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:27.502Z"
+    },
+    {
+      "id": "log-dytxvomkd",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:27.297Z"
+    },
+    {
+      "id": "log-um6265xu9",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:26.914Z"
+    },
+    {
+      "id": "log-uhw9vrcvt",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:26.523Z"
+    },
+    {
+      "id": "log-i90rirukk",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "FILE_VERDICT_APPROVED",
+      "details": "File \"Lelisa_Passport.pdf\" for client Lelisa Desisa was Approved by Hana Visa Supervisor.",
+      "timestamp": "2026-05-25T12:15:25.773Z"
+    },
+    {
+      "id": "log-49n46txgq",
+      "userId": "u-3",
+      "username": "visasup",
+      "role": "Visa_Supervisor",
+      "department": "Visa",
+      "action": "USER_LOGIN",
+      "details": "Logged into the system successfully.",
+      "timestamp": "2026-05-25T12:14:48.698Z"
+    },
+    {
+      "id": "log-77ap5qp3d",
+      "userId": "u-1",
+      "username": "admin",
+      "role": "Admin",
+      "department": "All",
+      "action": "FOLDER_CREATION",
+      "details": "Created client folder for fatuma (FN-VISA_003) allocated inside VISA-BOX-001.",
+      "timestamp": "2026-05-25T12:12:09.862Z"
+    },
+    {
+      "id": "log-q1drfdn3p",
+      "userId": "u-1",
+      "username": "admin",
+      "role": "Admin",
+      "department": "All",
+      "action": "USER_LOGIN",
+      "details": "Logged into the system successfully.",
+      "timestamp": "2026-05-25T12:10:58.930Z"
+    },
+    {
+      "id": "log-1",
+      "userId": "u-1",
+      "username": "admin",
+      "role": "Admin",
+      "department": "All",
+      "action": "SYSTEM_INIT",
+      "details": "Database seeded and initialized successfully.",
+      "timestamp": "2026-05-25T02:10:58.926Z"
+    },
+    {
+      "id": "log-2",
+      "userId": "u-4",
+      "username": "tdpenc",
+      "role": "Encoder",
+      "department": "TDP",
+      "action": "FOLDER_CREATION",
+      "details": "Client folder created for Abebe Bikila (FN-TDP-2026-001)",
+      "timestamp": "2026-05-25T06:10:58.926Z"
+    },
+    {
+      "id": "log-3",
+      "userId": "u-4",
+      "username": "tdpenc",
+      "role": "Encoder",
+      "department": "TDP",
+      "action": "FILE_UPLOAD",
+      "details": "Uploaded file Passport_Abebe_Bikila.pdf to Abebe Bikila folder.",
+      "timestamp": "2026-05-25T08:10:58.926Z"
+    },
+    {
+      "id": "log-4",
+      "userId": "u-2",
+      "username": "tdpsup",
+      "role": "TDP_Supervisor",
+      "department": "TDP",
+      "action": "FILE_APPROVAL",
+      "details": "Approved file Passport_Abebe_Bikila.pdf for client Abebe Bikila",
+      "timestamp": "2026-05-25T09:10:58.926Z"
+    }
+  ],
+  "config": {
+    "boxLimitFolders": 5,
+    "boxLimitFiles": 15,
+    "boxLimitSize": 10485760
+  },
+  "backups": []
+}

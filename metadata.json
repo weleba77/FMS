@@ -1,0 +1,6 @@
+{
+  "name": "ICS Ethiopia File Management System (FMS)",
+  "description": "Secure enterprise-level digital platform for managing departmental client files, file boxes, client folders, approval workflows, and audit trails for TDP and Visa departments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
